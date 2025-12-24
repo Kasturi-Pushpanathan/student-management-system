@@ -10,7 +10,7 @@ function StudentForm() {
 
     const student = { name, email, course };
 
-    const response = await fetch("http://localhost:8080/api/students", {
+    const response = await fetch("http://gitlocalhost:8080/api/students", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(student),
